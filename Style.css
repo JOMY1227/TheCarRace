@@ -1,0 +1,55 @@
+*{
+	/*外边距*/
+	margin: 0;
+	/*内边距*/
+	padding: 0;
+}
+
+#box{
+	width: 480px;
+	height: 100vh;
+	background: url(../img/bigbg.png);
+	/*单独对box标签设置边距*/
+	margin: 0 auto;
+	/*设置圆角半径*/
+	border-radius: 10px;
+	/*授权子标签可以相对于我进行绝对定位*/
+	position: relative;
+	/*内容溢出隐藏，赛道溢出后隐藏*/
+	overflow: hidden;
+	
+}
+#time{
+position: absolute;
+left: 30px;
+top: 20px;
+font-size: 30px;
+color: white;
+font-weight: bold;
+}
+#bg{
+	position: absolute;
+	left: 130px;
+	
+}
+#bg .lane{
+	width: 230px;
+	float: left;
+	height: 100vh;
+}
+#car{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	left: 150px;
+	bottom: 20px;
+}
+/*为以后随机生成的赛车写样式*/
+.car2{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	/*变形,图片旋转180度*/
+	transform: rotate(180deg);
+}
+
